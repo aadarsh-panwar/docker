@@ -1,11 +1,15 @@
 #specify base image
 FROM node:14-alpine
 
-#copy files from local to container
-COPY ./ ./
+WORKDIR /usr/app
+
+#copy package.json first to avoid cache bursting due to file changes
+COPY ./package.json ./
 
 #install dependencies
-RUN npm install 
+RUN npm install
+#copy rest of the files 
+COPY ./ ./
 
 #default command when container starts
 CMD ["npm", "start"]
