@@ -1,0 +1,16 @@
+{
+  "name": "visit-counter",
+  "version": "1.0.0",
+  "description": "Count number of users visited",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "redis": "^2.8.0"
+  }
+}
