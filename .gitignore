@@ -40,7 +40,11 @@ build/Release
 
 simple-web-application/node_modules
 visit-counter/node_modules
-
+angular/angular-app/node_modules
+angular/angular-app/dist
+angular/angular-app/e2e
+angular/angular-app/.browserslistrc
+angular/angular-app/.editorconfig
 # Dependency directories
 node_modules/
 # Dependency directories
